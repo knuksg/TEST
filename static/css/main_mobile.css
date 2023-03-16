@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "NanumSquareRound";
+  font-weight: 400;
+  src: url("../fonts/nanum-square-round/NanumSquareRoundR.ttf") format("truetype"); }
+
+@media (min-width: 320px) and (max-width: 1023px) {
+  @keyframes changewidth {
+    from {
+      width: 50%; }
+    to {
+      width: 55%; } }
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  html {
+    scroll-behavior: smooth !important; }
+  body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: black;
+    overflow: hidden; }
+    body .btn_wrap {
+      display: none; }
+    body .nav {
+      z-index: 10;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      top: 50px;
+      left: 50px;
+      background: url("../img/hamburger.png") no-repeat center/cover; }
+    body .hamburger {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    body .show {
+      z-index: 999;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: antiquewhite;
+      font-size: 4rem;
+      font-weight: bold;
+      justify-content: space-evenly; }
+      body .show .center_logo {
+        background: url("../img/center_logo.png") no-repeat center/contain;
+        width: 40%;
+        height: 20%; }
+      body .show .cancel {
+        width: 50px;
+        height: 50px;
+        background: url("../img/cancel.png") no-repeat center/cover;
+        z-index: 9999;
+        position: fixed;
+        top: 50px;
+        right: 50px; }
+    body .bg_wrap {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      color: aliceblue; }
+    body .section1 .real_video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(60%); }
+    body .section1 .intro_center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      body .section1 .intro_center .absolute_center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      body .section1 .intro_center .center_logo {
+        top: 40%;
+        transform: translate(-50%, -40%);
+        animation-duration: 0.5s;
+        animation-name: changewidth;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; }
+      body .section1 .intro_center .comming_soon {
+        top: 70%; }
+    body .section2 {
+      background: url("../img/bg_img/bg_intro.png") no-repeat center/cover; }
+      body .section2 .intro_wrap {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: brightness(60%); }
+        body .section2 .intro_wrap .video_wrap {
+          width: 100%;
+          height: 80%;
+          background: url("../img/intro/back2.png") no-repeat center/contain; }
+          body .section2 .intro_wrap .video_wrap iframe {
+            position: absolute;
+            top: 50%;
+            left: 57%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 40%; }
+    body .section3 {
+      background: url("../img/bg_img/bg_story.png") no-repeat center/cover; }
+      body .section3 .story_wrap {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: brightness(60%); }
+        body .section3 .story_wrap .text_wrap {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          background: url("../img/story/story_m.png") no-repeat center/contain; }
+          body .section3 .story_wrap .text_wrap .text {
+            width: 45%;
+            font-size: 1.3rem;
+            color: black;
+            font-weight: bold;
+            font-family: 'NanumSquareRound'; }
+    body .section4 {
+      height: auto; }
+      body .section4 .card_wrap {
+        width: 100%;
+        backdrop-filter: brightness(60%);
+        display: flex;
+        flex-direction: column; }
+        body .section4 .card_wrap #slide {
+          background: url("../img/bg_img/bg_character.png") no-repeat center/cover;
+          width: 100%;
+          height: 100vh;
+          position: relative;
+          overflow: hidden; }
+          body .section4 .card_wrap #slide .item .character_img_mobile {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            width: 60%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain; }
+          body .section4 .card_wrap #slide .item .dindin {
+            background-image: url("../img/character/dindin.png"); }
+          body .section4 .card_wrap #slide .item .snow {
+            background-image: url("../img/character/snow.png"); }
+          body .section4 .card_wrap #slide .item .donpy {
+            background-image: url("../img/character/donpy.png"); }
+          body .section4 .card_wrap #slide .item .explain_card_mobile {
+            position: relative;
+            top: -80%;
+            left: 270px;
+            z-index: 1;
+            width: 60%;
+            height: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: flex;
+            flex-direction: column; }
+            body .section4 .card_wrap #slide .item .explain_card_mobile .char_name {
+              position: absolute;
+              top: 27%;
+              left: 50px;
+              color: black;
+              font-size: 2.5rem;
+              padding-left: 50px;
+              font-family: 'NanumSquareRound'; }
+            body .section4 .card_wrap #slide .item .explain_card_mobile .explain_text {
+              width: 70%;
+              color: black;
+              padding: 50px;
+              margin-bottom: 50px;
+              font-size: 2rem;
+              font-family: 'NanumSquareRound'; }
+          body .section4 .card_wrap #slide .item .dindin_card {
+            background-image: url("../img/character/dindin_card.png"); }
+          body .section4 .card_wrap #slide .item .snow_card {
+            background-image: url("../img/character/snow_card.png"); }
+          body .section4 .card_wrap #slide .item .donpy_card {
+            background-image: url("../img/character/donpy_card.png"); }
+        body .section4 .card_wrap .tab_wrap {
+          display: none; }
+        body .section4 .card_wrap .character_img {
+          display: none; }
+        body .section4 .card_wrap .explain_card {
+          display: none; }
+  .row {
+    display: flex; }
+  .col {
+    display: flex;
+    flex-direction: column; }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }

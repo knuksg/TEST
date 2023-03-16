@@ -1,0 +1,39 @@
+
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+
+
+.bg_wrap {
+    min-width: 100%;
+    position: relative;
+    color: aliceblue;
+}
+
+.real_video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    filter: brightness(50%);
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intro_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+

@@ -1,0 +1,15 @@
+asgiref==3.6.0
+botocore==1.29.70
+cffi==1.15.1
+cryptography==39.0.1
+Django==4.1.6
+django-bootstrap5==22.2
+ec2instanceconnectcli==1.0.2
+jmespath==1.0.1
+mysqlclient==2.1.1
+pycparser==2.21
+python-dateutil==2.8.2
+six==1.16.0
+sqlparse==0.4.3
+tzdata==2022.7
+urllib3==1.26.14

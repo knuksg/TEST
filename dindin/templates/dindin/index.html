@@ -1,0 +1,179 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>딘딘의 가방</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main_mobile.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <script src="{% static 'js/slide.js' %}" defer></script>
+</head>
+
+<body>
+    <div class="btn_wrap">
+        <div class="btn main active">
+            <img src="{% static 'img/menu/main-on.png' %}" alt="" class="menu-img">
+        </div>
+        <div class="btn intro">
+            <img src="{% static 'img/menu/game-off.png' %}" alt="" class="menu-img">
+        </div>
+        <div class="btn story">
+            <img src="{% static 'img/menu/st-off.png' %}" alt="" class="menu-img">
+        </div>
+        <div class="btn character">
+            <img src="{% static 'img/menu/ch-off.png' %}" alt="" class="menu-img">
+        </div>
+    </div>
+
+    <div class="hamburger">
+        <div class="cancel"></div>
+        <div class="center_logo"></div>
+        <div class="btn_mobile main active">메인</div>
+        <div class="btn_mobile intro">게임소개</div>
+        <div class="btn_mobile story">스토리</div>
+        <div class="btn_mobile character">캐릭터</div>
+    </div>
+
+    <div class="nav col center">
+
+    </div>
+    <div class="video_height"></div>
+    <div class="bg_wrap section1 bg_video">
+        <video src="{% static 'img/video/bg_video.mp4' %}" class="real_video" autoplay loop muted></video>
+        <div class="intro_center">
+            <img class="center_logo absolute_center" alt="dindin's bag" src="{% static 'img/center_logo.png' %}" />
+            <a href="https://cafe.naver.com/dindin" target="_blank"><img class="comming_soon absolute_center" src="{% static 'img/naver_cafe.png' %}" alt="naver_cafe"></a>
+        </div>
+    </div>
+    <div class="bg_wrap section2">
+        <div class="intro_wrap center">
+            <div class="video_wrap ">
+                <!-- <video src="./img/video/bg_video.mp4" muted loop autoplay></video> -->
+                <iframe src="https://www.youtube.com/embed/2qaKmQFD3ig" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="bg_wrap section3">
+        <div class="story_wrap center">
+            <div class="text_wrap">
+                <div class="text">
+                    나 딘딘, 고독한 수집가!<br>
+                    해피리움에 칩입한 몬스터 드랍테일을 찾아 오늘도 길을 나선다.<br><br>
+                    비가 지독히도 내리는 밤이었지, 앞을 볼 수 정도로 매서운 비가 내리는 저녁,<br>
+                    그래서 우리 해피리움에 그런 도둑들이 들이닥칠 줄은 아무도 몰랐어.<br>
+                    드랍테일은 젤 먼저 해피리움의 아이들을 포승줄로 묶고 그들을 어디론가 데려갔고,<br>
+                    해피리움을 비추는 영원한 샤이닝스타를 탈취했지..<br>
+                    그 이후로 우리 마을은 빛을 잃고, 어둠만 느껴지는 고요한 동네가 돼버렸지..<br><br>
+                    제일 견디기 힘든건..<br>
+                    아이들의 소리가 사라진 이 마을..<br>
+                    고요한 정적은 남은 자들의 마음을 갉아먹고 있지..<br>
+                    더 이상 정적이 마을을 갉아 없애기 전에, 더 이상 어둠의 공포가 마을을 더욱 검은 늪으로 밀어넣기 전에.<br>
+                    나 딘딘은 오늘도 길을 나선다..<br><br>
+                    기다려라 드랍테일.. 너와 너의 졸개들을 산산히 뭉개어주마..
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bg_wrap section4">
+        <div class="filter"></div>
+        <div class="row card_wrap center">
+            <div class="col tab_wrap">
+                <div class="tab dindin selected">
+                    <img src="{% static 'img/character/tab_dindin.png' %}" alt="dindin">
+                </div>
+                <div class="tab donpy">
+                    <img src="{% static 'img/character/tab_donpy.png' %}" alt="donpy">
+                </div>
+                <div class="tab snow">
+                    <img src="{% static 'img/character/tab_snow.png' %}" alt="snow">
+                </div>
+            </div>
+            <div class="character_img char_image">
+            </div>
+            <div class="explain_card center">
+                <span class="char_name">딘딘</span>
+                        <span class="explain_text">고독한 여행자, 딘딘(Dindin).<br>
+                            딘딘은 이 게임의 주인공인 모험가입니다.
+                            늑대과의 내향적인 이상주의자입니다.
+                            그리고 해피리움을 지키는 수호자이기도 합니다.<br>
+                            드랍테일 일당이 해피리움에 들이 닥치고
+                            샤이닝스톤을 훔쳐 달아난 것을 뒤늦게 알게 되었습니다.<br>
+                            딘딘은 타격을 사용하는것을 좋아합니다.
+                            주 특기는 패시브인 공수교대를 활용하여 적에게 강력한 일격을 가하는 것입니다.
+                        </span>
+            </div>
+            <div id="slide">
+                <div class="item">
+                    <div class="character_img_mobile dindin">
+                    </div>
+                    <div class="explain_card_mobile center dindin_card">
+                        <span class="char_name">딘딘</span>
+                        <span class="explain_text">고독한 여행자, 딘딘(Dindin).<br>
+                            딘딘은 이 게임의 주인공인 모험가입니다.
+                            늑대과의 내향적인 이상주의자입니다.
+                            그리고 해피리움을 지키는 수호자이기도 합니다.<br>
+                            드랍테일 일당이 해피리움에 들이 닥치고
+                            샤이닝스톤을 훔쳐 달아난 것을 뒤늦게 알게 되었습니다.<br>
+                            딘딘은 타격을 사용하는것을 좋아합니다.
+                            주 특기는 패시브인 공수교대를 활용하여 적에게 강력한 일격을 가하는 것입니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="character_img_mobile snow">
+                    </div>
+                    <div class="explain_card_mobile center snow_card">
+                        <span class="char_name">스노우</span>
+                        <span class="explain_text">깊은 겨울, 북극 여우 스노우(Snow).<br>
+                            스노우는 도도한 캐릭터입니다. 냉혹한 파괴자이기도합니다.<br>
+                            시원하고 상쾌한 북극의 강한 공기를 가르며 몬스터에게 일격을 가합니다.<br>
+                            딘딘의 두번째 친구로서 헤피리움의 평화를 지켜냅니다.<br>
+                            스노우는 스킬을 쓰는것을 좋아합니다. 써클 마법의 정통을 느껴보세요!<br>
+
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+
+                    <div class="character_img_mobile donpy">
+                    </div>
+                    <div class="explain_card_mobile center donpy_card">
+                        <span class="char_name">돈피</span>
+                        <span class="explain_text">충성심 킹, 돈피(Donpy)!<br>
+                            돈피는 힘이 센, 강력한 용사입니다.하지만 의외로 조용한 성격의 소유자입니다.<br>
+                            주변을 잘 살피고 친근하기까지 합니다. 주변을 살피고 정돈을 잘합니다.<br>
+                            항상 진솔하고 관계에 충실한 돈피!<br>
+                            충성심 강한 돈피는 방패를 주무기로 장착합니다. <br>
+                            강력한 방패의 힘으로 높은 레벨의 몬스터들의 도전을 막아냅니다!
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="char_tab_wrap"> -->
+
+            <!-- <div class="character_img_mobile char_image">
+                </div>
+            </div>
+          
+            <div class="helper"></div> -->
+
+
+        </div>
+
+</body>
+
+</html>
